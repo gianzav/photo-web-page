@@ -10,7 +10,7 @@ header {
 
 header a {
     text-align: center;
-    color: #c1c8ce;
+    color: white;
     font-size: 2em;
     background: #3c5954;
     border: 1px solid #3c5954;
@@ -23,9 +23,10 @@ header a {
 
 #name {
     text-align: center;
+    text-shadow: 2px 2px 5px black;
     margin-top: 10%;
     font-size: 10vw;
-    color: #c1c8ce;
+    color: white;
 }
 
 #contact {
@@ -42,27 +43,34 @@ header a {
 }
 
 
-#FirstSection {
+#first-section {
     position: relative;
     height: 100vh;
     width: 100%;
     text-align: center;
 }
 
-#SecondSection {
+#second-section {
     height: 100vh;
 }
 
-#ThirdSection {
+#third-section {
+    position: relative;
     height: 100vh;
     width: 100%;
     text-align: center;
+    background-color: #3c5954;
 }
 
-#ThirdSection p {
-    font-size: 5vw;
-    color: #c1c8ce;
+#third-section p {
+    font-size: 3vw;
+    color: white;
+    text-shadow: 2px 2px 5px black;
 }
+
+#third-section .quote {
+}
+
 
 .flex-container {
     width: 100%;
@@ -74,6 +82,7 @@ header a {
 
 .background {
     z-index: -100;
+    filter: saturate(0.3);
     position: absolute;
     background-size: cover;
     background-repeat: no-repeat;
@@ -81,14 +90,14 @@ header a {
     height: 100vh;
 }
 
-.leftBackground {
+.left-background {
     float: left;
     left: 0;
     background-position: left;
     background-image: url("img/lucchetti.jpg");
 }
 
-.rightBackground {
+.right-background {
     background-position: center;
     float: right;
     right: 0;
