@@ -62,11 +62,22 @@ header a {
     height: 100vh;
     width: 100%;
     text-align: center;
+    position: relative;
 }
 
-#ThirdSection p {
-    font-size: 5vw;
-    color: #c1c8ce;
+#ThirdSection .card p {
+    font-size: 2em;
+    color: var(--gray);
+}
+
+.card {
+    margin: auto;
+    max-width: 700px;
+    background-color: var(--dark-green);
+    text-align: left;
+    padding: 1em;
+    height 40%;
+    margin-top: 30vh;
 }
 
 .flex-container {
