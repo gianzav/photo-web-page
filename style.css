@@ -20,9 +20,7 @@ header {
     color: var(--gray);
     font-size: 2em;
     background: var(--dark-green);
-    border: 1px solid var(--dark-green);
     border-radius: 9999px;
-    margin-left: 2%;
     text-decoration: none;
     padding: 0 .7em;
 }
