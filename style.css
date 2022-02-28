@@ -40,9 +40,9 @@ header {
 }
 
 #SecondSection {
+    position: relative;
     height: 100vh;
     width: 100%;
-    position: relative;
     background-color: var(--gray);
 }
 
@@ -59,14 +59,19 @@ header {
 #SecondSection img:nth-child(1) {
     left: 75px;
     top: 100px;
+    transform: rotate(1deg);
 }
+
 #SecondSection img:nth-child(2) {
-    right: 75px;
+    right: 300px;
     top: 200px;
+    transform: rotate(-2deg);
 }
+
 #SecondSection img:nth-child(3) {
     left: 500px;
     top: 500px;
+    transform: rotate(2deg);
 }
 
 #ThirdSection {
@@ -87,7 +92,7 @@ header {
     background-color: var(--dark-green);
     text-align: left;
     padding: 1em;
-    height 40%;
+    height: 40%;
     margin-top: 30vh;
 }
 
