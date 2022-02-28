@@ -99,3 +99,11 @@ header a {
     right: 0;
     background-image: url("img/landscape.jpg");
 }
+
+#footer {
+    background-color: var(--dark-green);
+    color: var(--gray);
+    text-align: center;
+    padding: .2em;
+    width: 100%;
+}
