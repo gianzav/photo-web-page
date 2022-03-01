@@ -1,3 +1,9 @@
+:root {
+    --dark-green: #3c5954;
+    --light-green: #00FF00;
+    --gray: #c1c8ce;
+}
+
 body {
     position: relative;
     padding:0;
@@ -6,19 +12,17 @@ body {
 
 header {
     text-align: right;
+    padding: 30px;
 }
 
-header a {
+.button {
     text-align: center;
-    color: white;
+    color: var(--gray);
     font-size: 2em;
-    background: #3c5954;
-    border: 1px solid #3c5954;
-    border-radius: 15px;
-    margin-left: 2%;
+    background: var(--dark-green);
+    border-radius: 9999px;
     text-decoration: none;
-    padding-left: 1%;
-    padding-right: 1%;
+    padding: 0 .7em;
 }
 
 #name {
@@ -26,22 +30,8 @@ header a {
     text-shadow: 2px 2px 5px black;
     margin-top: 10%;
     font-size: 10vw;
-    color: white;
+    color: var(--gray);
 }
-
-#contact {
-    bottom: 0;
-    text-align: center;
-    color: white;
-    font-size: 2em;
-    background: #3c5954;
-    border: 1px solid #3c5954;
-    border-radius: 15px;
-    text-decoration: none;
-    padding-left: 1%;
-    padding-right: 1%;
-}
-
 
 #first-section {
     position: relative;
@@ -52,6 +42,32 @@ header a {
 
 #second-section {
     height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: var(--gray);
+}
+
+#second-section .polaroid {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    position: absolute;
+    border: solid 20px white;
+    border-bottom: solid 80px white;
+    box-shadow: 0px 5px 10px rgba(0,0,0,.3);
+}
+
+#second-section img:nth-child(1) {
+    left: 75px;
+    top: 100px;
+}
+#second-section img:nth-child(2) {
+    right: 75px;
+    top: 200px;
+}
+#second-section img:nth-child(3) {
+    left: 500px;
+    top: 500px;
 }
 
 #third-section {
@@ -59,18 +75,25 @@ header a {
     height: 100vh;
     width: 100%;
     text-align: center;
-    background-color: #3c5954;
 }
 
-#third-section p {
-    font-size: 3vw;
-    color: white;
-    text-shadow: 2px 2px 5px black;
+#third-section .card p {
+    font-size: 2em;
+    color: var(--gray);
+}
+
+.card {
+    margin: auto;
+    max-width: 700px;
+    background-color: var(--dark-green);
+    text-align: left;
+    padding: 1em;
+    height 40%;
+    margin-top: 30vh;
 }
 
 #third-section .quote {
 }
-
 
 .flex-container {
     width: 100%;
@@ -78,7 +101,6 @@ header a {
     flex-direction: column;
     align-items: center;
 }
-
 
 .background {
     z-index: -100;
@@ -102,4 +124,12 @@ header a {
     float: right;
     right: 0;
     background-image: url("img/landscape.jpg");
+}
+
+#footer {
+    background-color: var(--dark-green);
+    color: var(--gray);
+    text-align: center;
+    padding: .2em;
+    width: 100%;
 }
