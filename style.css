@@ -4,6 +4,7 @@
     --gray: #c1c8ce;
 }
 
+
 body {
     position: relative;
     padding:0;
@@ -12,7 +13,7 @@ body {
 
 header {
     text-align: right;
-    padding: 30px;
+    padding: 2%;
 }
 
 .button {
