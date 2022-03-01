@@ -27,26 +27,27 @@ header {
 
 #name {
     text-align: center;
+    text-shadow: 2px 2px 5px black;
     margin-top: 10%;
     font-size: 10vw;
     color: var(--gray);
 }
 
-#FirstSection {
+#first-section {
     position: relative;
     height: 100vh;
     width: 100%;
     text-align: center;
 }
 
-#SecondSection {
+#second-section {
     height: 100vh;
     width: 100%;
     position: relative;
     background-color: var(--gray);
 }
 
-#SecondSection .polaroid {
+#second-section .polaroid {
     width: 300px;
     height: 300px;
     object-fit: cover;
@@ -56,27 +57,27 @@ header {
     box-shadow: 0px 5px 10px rgba(0,0,0,.3);
 }
 
-#SecondSection img:nth-child(1) {
+#second-section img:nth-child(1) {
     left: 75px;
     top: 100px;
 }
-#SecondSection img:nth-child(2) {
+#second-section img:nth-child(2) {
     right: 75px;
     top: 200px;
 }
-#SecondSection img:nth-child(3) {
+#second-section img:nth-child(3) {
     left: 500px;
     top: 500px;
 }
 
-#ThirdSection {
+#third-section {
+    position: relative;
     height: 100vh;
     width: 100%;
     text-align: center;
-    position: relative;
 }
 
-#ThirdSection .card p {
+#third-section .card p {
     font-size: 2em;
     color: var(--gray);
 }
@@ -91,6 +92,9 @@ header {
     margin-top: 30vh;
 }
 
+#third-section .quote {
+}
+
 .flex-container {
     width: 100%;
     display: flex;
@@ -98,9 +102,9 @@ header {
     align-items: center;
 }
 
-
 .background {
     z-index: -100;
+    filter: saturate(0.3);
     position: absolute;
     background-size: cover;
     background-repeat: no-repeat;
@@ -108,14 +112,14 @@ header {
     height: 100vh;
 }
 
-.leftBackground {
+.left-background {
     float: left;
     left: 0;
     background-position: left;
     background-image: url("img/lucchetti.jpg");
 }
 
-.rightBackground {
+.right-background {
     background-position: center;
     float: right;
     right: 0;
