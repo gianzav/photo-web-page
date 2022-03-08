@@ -45,6 +45,7 @@ header {
 #second-section {
     position: relative;
     height: 100vh;
+    min-height: 840px;
     width: 100%;
     background-color: var(--gray);
 }
@@ -106,18 +107,14 @@ header {
     background-color: var(--dark-green);
     color: var(--gray);
     text-align: center;
-    padding: .2em;
+    padding: .2em 0;
     width: 100%;
 }
 
 .image {
     display: flex;
     align-items: center;
-}
-
-figcaption {
-    max-width: 30%;
-    padding: 40px;
+    max-width: 1300px;
 }
 
 /* Begin big desktop media query */
@@ -217,32 +214,38 @@ figcaption {
     }
 
     #second-section figure:nth-child(1) {
-        left: 50px;
-        top: 50px;
+        left: 0px;
+        top: 40px;
     }
 
     #second-section figure:nth-child(2) {
         flex-direction: row-reverse;
-        right: 50px;
+        right: 0px;
         top: 50vh;
         transform: translateY(-50%);
         text-align: right;
     }
 
     #second-section figure:nth-child(3) {
-        left: 50px;
-        bottom: 50px;
+        left: 0px;
+        bottom: 40px;
+    }
+
+    .image figcaption {
+        padding: 30px;
     }
 } /* End tablet media query */
 
 /* Begin small tablet media query */
-@media only screen and (min-width: 400px) and (max-width: 639px) {
+
+/* Begin smartphone media query */
+@media only screen and (min-width: 480px) and (max-width: 639px) {
     .polaroid {
         width: var(--small-img);
         height: var(--small-img);
         border: solid calc(var(--small-img)/12) white;
         border-bottom: solid calc(var(--small-img)/3) white;
-        box-shadow: 0px 5px 10px rgba(0,0,0,.3);
+        box-shadow: 0px 3px 8px rgba(0,0,0,.3);
     }
 
     #second-section .image {
@@ -263,13 +266,26 @@ figcaption {
     }
 
     #second-section figure:nth-child(3) {
-        left: 50px;
-        bottom: 50px;
+        left: 10px;
+        bottom: 10px;
     }
-} /* End small tablet media query */
 
-/* Begin smartphone media query */
-@media only screen and (min-width: 400px) and (max-width: 639px) {
+    .image figcaption {
+        padding: 20px;
+    }
+} /* End smartphone media query */
+
+@media only screen and (max-width: 479px) {
+    #second-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        height: auto;
+        min-height: 100vh;
+        padding: 5vh 0;
+    }
+
     .polaroid {
         width: var(--small-img);
         height: var(--small-img);
@@ -279,26 +295,10 @@ figcaption {
     }
 
     #second-section .image {
-        position: absolute;
+        flex-direction: column;
     }
 
-    #second-section figure:nth-child(1) {
-        left: 30px;
-        top: 30px;
+    #second-section .image figcaption {
+        padding: 20px;
     }
-
-    #second-section figure:nth-child(2) {
-        flex-direction: row-reverse;
-        right: 30px;
-        top: 50vh;
-        transform: translateY(-50%);
-        text-align: right;
-    }
-
-    #second-section figure:nth-child(3) {
-        left: 30px;
-        bottom: 30px;
-    }
-} /* End smartphone media query */
-
-@media only screen and (max-width: 399px) {
+}
