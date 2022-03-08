@@ -2,6 +2,9 @@
     --dark-green: #3c5954;
     --light-green: #00FF00;
     --gray: #c1c8ce;
+    --big-img: 260px;
+    --medium-img: 200px;
+    --small-img: 150px;
 }
 
 body {
@@ -68,9 +71,6 @@ header {
     margin-top: 30vh;
 }
 
-#third-section .quote {
-}
-
 .flex-container {
     width: 100%;
     display: flex;
@@ -110,33 +110,51 @@ header {
     width: 100%;
 }
 
+.image {
+    display: flex;
+    align-items: center;
+}
+
+figcaption {
+    max-width: 30%;
+    padding: 40px;
+}
+
 /* Begin big desktop media query */
 @media only screen and (min-width: 1300px) {
     .polaroid {
-        width: 270px;
-        height: 270px;
-        border: solid 20px white;
-        border-bottom: solid 80px white;
+        width: var(--big-img);
+        height: var(--big-img);
+        border: solid calc(var(--big-img)/12) white;
+        border-bottom: solid calc(var(--big-img)/3) white;
         box-shadow: 0px 5px 10px rgba(0,0,0,.3);
     }
 
     #second-section .image {
         position: absolute;
+        justify-content: flex-start;
     }
 
-    #second-section div:nth-child(1) {
+    #second-section figure:nth-child(1) {
         left: 70px;
         top: 70px;
     }
 
-    #second-section div:nth-child(2) {
+    #second-section figure:nth-child(2) figcaption {
+        max-width: 20%;
+    }
+
+    #second-section figure:nth-child(2) {
+        flex-direction: row-reverse;
         right: 70px;
         top: 50vh;
         transform: translateY(-50%);
+        text-align: right;
     }
 
-    #second-section div:nth-child(3) {
-        left: 20%;
+    #second-section figure:nth-child(3) {
+        align-items: flex-end;
+        left: 15%;
         bottom: 70px;
     }
 } /* End desktop media query */
@@ -144,10 +162,10 @@ header {
 /* Begin medium desktop media query */
 @media only screen and (min-width: 960px) and (max-width: 1299px) {
     .polaroid {
-        width: 200px;
-        height: 200px;
-        border: solid 20px white;
-        border-bottom: solid 80px white;
+        width: var(--medium-img);
+        height: var(--medium-img);
+        border: solid calc(var(--medium-img)/12) white;
+        border-bottom: solid calc(var(--medium-img)/3) white;
         box-shadow: 0px 5px 10px rgba(0,0,0,.3);
     }
 
@@ -155,18 +173,20 @@ header {
         position: absolute;
     }
 
-    #second-section div:nth-child(1) {
+    #second-section figure:nth-child(1) {
         left: 70px;
         top: 70px;
     }
 
-    #second-section div:nth-child(2) {
+    #second-section figure:nth-child(2) {
+        flex-direction: row-reverse;
         right: 70px;
         top: 50vh;
         transform: translateY(-50%);
+        text-align: right;
     }
 
-    #second-section div:nth-child(3) {
+    #second-section figure:nth-child(3) {
         left: 20%;
         bottom: 70px;
     }
@@ -175,10 +195,10 @@ header {
 /* Begin tablet media query */
 @media only screen and (min-width: 640px) and (max-width: 959px) {
     .polaroid {
-        width: 200px;
-        height: 200px;
-        border: solid 20px white;
-        border-bottom: solid 80px white;
+        width: var(--medium-img);
+        height: var(--medium-img);
+        border: solid calc(var(--medium-img)/12) white;
+        border-bottom: solid calc(var(--medium-img)/3) white;
         box-shadow: 0px 5px 10px rgba(0,0,0,.3);
     }
 
@@ -186,18 +206,20 @@ header {
         position: absolute;
     }
 
-    #second-section div:nth-child(1) {
+    #second-section figure:nth-child(1) {
         left: 50px;
         top: 50px;
     }
 
-    #second-section div:nth-child(2) {
+    #second-section figure:nth-child(2) {
+        flex-direction: row-reverse;
         right: 50px;
         top: 50vh;
         transform: translateY(-50%);
+        text-align: right;
     }
 
-    #second-section div:nth-child(3) {
+    #second-section figure:nth-child(3) {
         left: 50px;
         bottom: 50px;
     }
@@ -206,10 +228,10 @@ header {
 /* Begin small tablet media query */
 @media only screen and (min-width: 400px) and (max-width: 639px) {
     .polaroid {
-        width: 160px;
-        height: 160px;
-        border: solid 15px white;
-        border-bottom: solid 60px white;
+        width: var(--small-img);
+        height: var(--small-img);
+        border: solid calc(var(--small-img)/12) white;
+        border-bottom: solid calc(var(--small-img)/3) white;
         box-shadow: 0px 5px 10px rgba(0,0,0,.3);
     }
 
@@ -217,18 +239,20 @@ header {
         position: absolute;
     }
 
-    #second-section div:nth-child(1) {
+    #second-section figure:nth-child(1) {
         left: 50px;
         top: 50px;
     }
 
-    #second-section div:nth-child(2) {
+    #second-section figure:nth-child(2) {
+        flex-direction: row-reverse;
         right: 50px;
         top: 50vh;
         transform: translateY(-50%);
+        text-align: right;
     }
 
-    #second-section div:nth-child(3) {
+    #second-section figure:nth-child(3) {
         left: 50px;
         bottom: 50px;
     }
@@ -237,10 +261,10 @@ header {
 /* Begin smartphone media query */
 @media only screen and (min-width: 400px) and (max-width: 639px) {
     .polaroid {
-        width: 140px;
-        height: 140px;
-        border: solid 10px white;
-        border-bottom: solid 40px white;
+        width: var(--small-img);
+        height: var(--small-img);
+        border: solid calc(var(--small-img)/12) white;
+        border-bottom: solid calc(var(--small-img)/3) white;
         box-shadow: 0px 3px 8px rgba(0,0,0,.3);
     }
 
@@ -248,18 +272,20 @@ header {
         position: absolute;
     }
 
-    #second-section div:nth-child(1) {
+    #second-section figure:nth-child(1) {
         left: 30px;
         top: 30px;
     }
 
-    #second-section div:nth-child(2) {
+    #second-section figure:nth-child(2) {
+        flex-direction: row-reverse;
         right: 30px;
         top: 50vh;
         transform: translateY(-50%);
+        text-align: right;
     }
 
-    #second-section div:nth-child(3) {
+    #second-section figure:nth-child(3) {
         left: 30px;
         bottom: 30px;
     }
