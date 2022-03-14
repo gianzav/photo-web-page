@@ -85,19 +85,49 @@ header ul li {
     text-align: center;
 }
 
-#third-section .card p {
+#third-section .card ul {
+    margin: 0;
+    padding: 0;
+}
+
+#third-section .card li {
     font-size: 2em;
     color: var(--gray);
+    list-style: none;
+    display: block;
+    margin: 0 0 25px;
+}
+
+#third-section .card .caption {
+    font-size: 1em;
+    margin: 0 0 5px;
+}
+
+#third-section .card li:nth-last-child(1) {
+    margin: 0 0 0px;
+}
+
+#third-section .card a {
+    color: var(--gray);
+    transition: color .3s;
+    text-decoration: none;
+}
+
+#third-section .card a:hover {
+    color: var(--white);
 }
 
 .card {
-    margin: auto;
     max-width: 700px;
     background-color: var(--dark-green);
     text-align: left;
-    padding: 1em;
-    height: 40%;
-    margin-top: 30vh;
+    padding: 3em;
+    position: absolute;
+    top: 20vh;
+    transform: translatey(-50%);
+    left: 50%;
+    transform: translatex(-50%);
+    box-shadow: 5px 5px 10px rgba(0,0,0,.3);
 }
 
 .flex-container {
@@ -310,6 +340,19 @@ footer p {
     .image figcaption {
         padding: 20px;
     }
+
+    #third-section .card li {
+        font-size: 1.4em;
+    }
+
+    #third-section .card .caption {
+        font-size: .9em;
+        margin: 0 0 5px;
+    }
+
+    footer {
+        font-size: .9em;
+    }
 } /* End smartphone media query */
 
 @media only screen and (max-width: 479px) {
@@ -337,5 +380,18 @@ footer p {
 
     #second-section .image figcaption {
         padding: 20px;
+    }
+
+    #third-section .card li {
+        font-size: 1.1em;
+    }
+
+    #third-section .card .caption {
+        font-size: .7em;
+        margin: 0 0 5px;
+    }
+
+    footer {
+        font-size: .7em;
     }
 }
