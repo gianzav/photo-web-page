@@ -8,7 +8,7 @@
 
 ### Second section
 - [ ] Overlapping second section text in horizontal mode
-- [ ] Improve polaroid shadows (light coming from top-left)
+- [X] Improve polaroid shadows (light coming from top-left)
 
 ### Third section
 - [ ] Remove overflowing text in third secion
