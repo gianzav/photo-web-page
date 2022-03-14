@@ -2,6 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <div class="flex-container">
@@ -10,17 +11,18 @@
 
                 <div class="left-background background"></div>
                 <div class="right-background background"></div>
-                
+
                 <header>
-
-                    <a class="button" href="#">Gallery</a>
-                    <a class="button" href="#">Bio</a>
-
+                    <ul>
+                        <li><a class="button" href="#">Gallery</a></li>
+                        <li><a class="button" href="#">Bio</a></li>
+                    </ul>
                 </header>
 
-                <h1 id="name">Gianluca Zavan photographer</h1>
-
-                <a class="button" href="#third-section" id="contact">Contact nosotros</a>
+                <div class="main-text">
+                    <h1 class="name">Gianluca Zavan photographer</h1>
+                    <a class="button" href="#third-section" id="contact">Contact nosotros</a>
+                </div>
 
             </div>
 
@@ -32,7 +34,7 @@
                                 adipiscing elit, sed do eiusmod tempor 
                                 incididunt ut labore et dolore magna aliqua.
                                 Quam id leo in vitae turpis massa sed.
-                                </figcaption>
+                    </figcaption>
                 </figure>
                 <figure class="image">
                     <img class="polaroid" src="img/cat.jpeg"
@@ -41,7 +43,7 @@
                                 adipiscing elit, sed do eiusmod tempor 
                                 incididunt ut labore et dolore magna aliqua.
                                 Quam id leo in vitae turpis massa sed.
-                                </figcaption>
+                    </figcaption>
                 </figure>
                 <figure class="image">
                     <img class="polaroid" src="img/cat.jpeg"
@@ -50,7 +52,7 @@
                                 adipiscing elit, sed do eiusmod tempor 
                                 incididunt ut labore et dolore magna aliqua.
                                 Quam id leo in vitae turpis massa sed.
-                                </figcaption>
+                    </figcaption>
                 </figure>
             </div>
 
@@ -59,16 +61,23 @@
                 <div class="right-background background"></div>
 
                 <div class="card">
-                    <p>+33 333 333 3333</p>
-                    <p>Gorizia (GO), Italy</p>
-                    <p>gianlucafotografopazzo@war.ru</p>
+                    <ul>
+                        <li>I can work for you in exchange for money or cash, feel free to contact me!</li>
+                        <li class="caption">Phone number:</li>
+                        <li><a href="tel:+333333333333">+33 333 333 3333</a></li>
+                        <li class="caption">Address:</li>
+                        <li>Gorizia (GO), Italy</li>
+                        <li class="caption">Mail:</li>
+                        <li><a href="mailto:gianlucafotografopazzo@war.eu">gianlucafotografopazzo@war.ru</a></li>
+                    </ul>
                 </div>
 
-            </div>
-            <div id="footer">
+            <footer>
                 <p><em>"If something is easy that means you know how to do it"</em></p>
                 <p>© 2022 Gianluca Zavan</p>
-              </div>
+            </footer>
+
+            </div>
 
         </div>
 

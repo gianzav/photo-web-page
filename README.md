@@ -3,16 +3,19 @@
 ## Todo
 
 ### First section
-- [ ] Button Styling
-- [ ] Contact me button placement
-- [ ] Overlapping second section text in horizontal mode
+- [X] Button Styling
+    - [ ] Make responsive for small screens
+- [X] Contact me button placement
+    - [ ] Make responsive to match navbar style
 
 ### Second section
-- [ ] Remove overflowing text in third secion
-- [ ] Improve polaroid shadows (light coming from top-left)
+- [ ] Overlapping second section text in horizontal mode
+- [X] Improve polaroid shadows (light coming from top-left)
 
 ### Third section
-- [ ] Put footer in third section/remove footer
+- [X] Remove overflowing text in third secion
+    - [ ] Deal with *really* small screens
+- [X] Put footer in third section/remove footer
 - [ ] Choose images (different in 1st and 3rd section?)
 
 ### Other pages
