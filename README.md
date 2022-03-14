@@ -12,7 +12,7 @@
 
 ### Third section
 - [ ] Remove overflowing text in third secion
-- [ ] Put footer in third section/remove footer
+- [X] Put footer in third section/remove footer
 - [ ] Choose images (different in 1st and 3rd section?)
 
 ### Other pages
