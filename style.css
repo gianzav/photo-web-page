@@ -1,7 +1,10 @@
 :root {
-    --dark-green: #3c5954;
+    /* Color variables */
+    --white: #FFFFFF;
     --light-green: #00FF00;
     --gray: #c1c8ce;
+    --dark-green: #3c5954;
+    /* Image dimensions variables */
     --big-img: 260px;
     --medium-img: 200px;
     --small-img: 180px;
@@ -14,7 +17,19 @@ body {
 
 header {
     text-align: right;
-    padding: 30px;
+}
+
+header ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 2em 1em 0 1em;
+}
+
+header ul li {
+    list-style: none;
+    margin: 0 1em;
 }
 
 .button {
@@ -22,9 +37,14 @@ header {
     color: var(--gray);
     font-size: 2em;
     background: var(--dark-green);
-    border-radius: 9999px;
+    border-radius: 4em;
     text-decoration: none;
-    padding: 0 .7em;
+    padding: .05em .7em;
+    transition: color .3s;
+}
+
+.button:hover {
+    color: var(--white);
 }
 
 #name {
