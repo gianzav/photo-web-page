@@ -4,7 +4,7 @@
 
 ### First section
 - [X] Button Styling
-- [ ] Contact me button placement
+- [X] Contact me button placement
 
 ### Second section
 - [ ] Overlapping second section text in horizontal mode
